@@ -1,0 +1,868 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_grey"
+    tools:context="com.dealacceleration.BusinessMyAccountEditProfile"
+    android:id="@+id/business_home_account_rl">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/business_myaccount_editprofile_fv"
+            android:layout_marginTop="45dp">
+
+            <ScrollView
+                android:id="@+id/business_home_account_sv_accountprofile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/business_myaccount_editprofile_rl_accountprofile"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_grey">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:weightSum="2"
+                        android:id="@+id/business_myaccount_editprofile_ll_accountprofile1"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:id="@+id/business_myaccount_editprofile_et_companyname"
+                            android:ems="10"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:hint="@string/business_myaccount_editprofile_et_companyname_text"
+                            android:gravity="center"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:layout_marginRight="2.5dp"
+                            android:textColorHint="@color/hint_text_color" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:id="@+id/business_myaccount_editprofile_et_website"
+                            android:ems="10"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:hint="@string/business_myaccount_editprofile_et_website_text"
+                            android:gravity="center"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="2.5dp"
+                            android:textColorHint="@color/hint_text_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:weightSum="2"
+                        android:id="@+id/business_myaccount_editprofile_ll_accountprofile2"
+                        android:layout_below="@+id/business_myaccount_editprofile_ll_accountprofile1"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:id="@+id/business_myaccount_editprofile_et_address1"
+                            android:layout_weight="1"
+                            android:hint="@string/business_myaccount_editprofile_et_address1_text"
+                            android:ems="10"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:gravity="center"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:layout_marginRight="2.5dp"
+                            android:textColorHint="@color/hint_text_color"/>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:id="@+id/business_myaccount_editprofile_et_address2"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2.5dp"
+                            android:hint="@string/business_myaccount_editprofile_et_address2_text"
+                            android:ems="10"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:gravity="center"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:textColorHint="@color/hint_text_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:weightSum="2"
+                        android:id="@+id/business_myaccount_editprofile_ll_accountprofile3"
+                        android:layout_below="@+id/business_myaccount_editprofile_ll_accountprofile2"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:id="@+id/business_myaccount_editprofile_et_city"
+                            android:layout_weight="1"
+                            android:hint="@string/business_myaccount_editprofile_et_city_text"
+                            android:gravity="center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:ems="10"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:layout_marginRight="2.5dp"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:textColorHint="@color/hint_text_color" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:id="@+id/business_myaccount_editprofile_et_state"
+                            android:layout_weight="1"
+                            android:hint="@string/business_myaccount_editprofile_et_state_text"
+                            android:gravity="center"
+                            android:textColor="@color/grey_button_text_color"
+                            android:ems="10"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:layout_marginLeft="2.5dp"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:textStyle="bold"
+                            android:textColorHint="@color/hint_text_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:weightSum="2"
+                        android:id="@+id/business_myaccount_editprofile_ll_accountprofile4"
+                        android:layout_below="@+id/business_myaccount_editprofile_ll_accountprofile3"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:id="@+id/business_myaccount_editprofile_et_zipcode"
+                            android:layout_weight="1"
+                            android:hint="@string/business_myaccount_editprofile_et_zipcode_text"
+                            android:gravity="center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:ems="10"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:layout_marginRight="2.5dp"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:textColorHint="@color/hint_text_color" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:id="@+id/business_myaccount_editprofile_et_country"
+                            android:layout_weight="1"
+                            android:hint="@string/business_myaccount_editprofile_et_country_text"
+                            android:gravity="center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:ems="10"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="2.5dp"
+                            android:textColorHint="@color/hint_text_color" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/business_myaccount_editprofile_account_b_submit"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:text="@string/business_myaccount_editprofile_account_b_submit_text"
+                        android:background="@drawable/button_blue"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_ll_accountprofile4" />
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/business_home_account_sv_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/business_myaccount_editprofile_rl_contacts"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_grey">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:textSize="15sp"
+                        android:id="@+id/business_myaccount_editprofile_tv_entercontactinfo"
+                        android:text="@string/business_myaccount_editprofile_tv_entercontactinfo_text"
+                        android:gravity="center"
+                        android:textColor="@color/grey_button_text_color"
+                        android:textStyle="bold"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:textSize="15sp"
+                        android:id="@+id/business_myaccount_editprofile_tv_primarycontact"
+                        android:text="@string/business_myaccount_editprofile_tv_primarycontact_text"
+                        android:gravity="center"
+                        android:textColor="@color/grey_button_text_color"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_tv_entercontactinfo"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:weightSum="2"
+                        android:id="@+id/business_myaccount_editprofile_ll_contacts1"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_tv_primarycontact">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:id="@+id/business_myaccount_editprofile_et_name"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:hint="@string/business_myaccount_editprofile_et_name_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:gravity="center"
+                            android:layout_marginRight="2.5dp"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:id="@+id/business_myaccount_editprofile_et_email"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:hint="@string/business_myaccount_editprofile_et_email_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:gravity="center"
+                            android:layout_marginLeft="2.5dp"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    <EditText
+                        android:layout_width="172.5dp"
+                        android:layout_height="30dp"
+                        android:textSize="15sp"
+                        android:id="@+id/business_myaccount_editprofile_et_phone"
+                        android:ems="10"
+                        android:background="@drawable/border"
+                        android:inputType="textPersonName"
+                        android:hint="@string/business_myaccount_editprofile_et_phone_text"
+                        android:textColorHint="@color/hint_text_color"
+                        android:gravity="center"
+                        android:textColor="@color/grey_button_text_color"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_ll_contacts1"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:textSize="15sp"
+                        android:id="@+id/business_myaccount_editprofile_tv_secondarycontact"
+                        android:text="@string/business_myaccount_editprofile_tv_secondarycontact_text"
+                        android:gravity="center"
+                        android:textColor="@color/grey_button_text_color"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_et_phone"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:weightSum="2"
+                        android:id="@+id/business_myaccount_editprofile_ll_contacts2"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_tv_secondarycontact">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/business_myaccount_editprofile_et_secondaryname"
+                            android:hint="@string/business_myaccount_editprofile_et_name_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/grey_button_text_color"
+                            android:gravity="center"
+                            android:layout_marginRight="2.5dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/business_myaccount_editprofile_et_secondaryemail"
+                            android:layout_weight="1"
+                            android:hint="@string/business_myaccount_editprofile_et_email_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:textSize="15sp"
+                            android:ems="10"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/grey_button_text_color"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="2.5dp" />
+
+                        </LinearLayout>
+
+                    <EditText
+                        android:layout_width="172.5dp"
+                        android:layout_height="30dp"
+                        android:textSize="15sp"
+                        android:id="@+id/business_myaccount_editprofile_et_secondaryphone"
+                        android:ems="10"
+                        android:background="@drawable/border"
+                        android:inputType="textPersonName"
+                        android:hint="@string/business_myaccount_editprofile_et_phone_text"
+                        android:textColorHint="@color/hint_text_color"
+                        android:gravity="center"
+                        android:textColor="@color/grey_button_text_color"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_ll_contacts2"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:textSize="15sp"
+                        android:id="@+id/business_myaccount_editprofile_tv_additionalcontact"
+                        android:text="@string/business_myaccount_editprofile_tv_additionalcontact_text"
+                        android:gravity="center"
+                        android:textColor="@color/grey_button_text_color"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_et_secondaryphone"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:weightSum="2"
+                        android:id="@+id/business_myaccount_editprofile_ll_contacts3"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_tv_additionalcontact">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/business_myaccount_editprofile_et_additionalname"
+                            android:hint="@string/business_myaccount_editprofile_et_name_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:ems="10"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/grey_button_text_color"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginRight="2.5dp" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/business_myaccount_editprofile_et_additionalemail"
+                            android:hint="@string/business_myaccount_editprofile_et_email_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/grey_button_text_color"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="2.55dp" />
+
+                        </LinearLayout>
+
+                    <EditText
+                        android:layout_width="172.5dp"
+                        android:layout_height="30dp"
+                        android:textSize="15sp"
+                        android:id="@+id/business_myaccount_editprofile_et_additionalphone"
+                        android:ems="10"
+                        android:background="@drawable/border"
+                        android:inputType="textPersonName"
+                        android:hint="@string/business_myaccount_editprofile_et_phone_text"
+                        android:textColorHint="@color/hint_text_color"
+                        android:gravity="center"
+                        android:textColor="@color/grey_button_text_color"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_ll_contacts3"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/business_myaccount_editprofile_contacts_b_submit"
+                        android:gravity="center"
+                        android:text="@string/business_myaccount_editprofile_account_b_submit_text"
+                        android:background="@drawable/button_blue"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_et_additionalphone" />
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/business_home_account_sv_businesssellerinfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/business_myaccount_editprofile_rl_businesssellerinfo"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_grey">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/business_myaccount_editprofile_tv_businessdescription"
+                        android:gravity="center"
+                        android:text="@string/business_myaccount_editprofile_tv_businessdescription_text"
+                        android:textStyle="bold"
+                        android:textColor="@color/grey_button_text_color"
+                        android:layout_marginTop="87dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:textSize="15sp"
+                        android:id="@+id/business_myaccount_editprofile_et_businessdescription"
+                        android:ems="10"
+                        android:lines="8"
+                        android:minLines="6"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:maxLines="10"
+                        android:inputType="textMultiLine"
+                        android:singleLine="false"
+                        android:background="@drawable/border"
+                        android:hint="@string/business_myaccount_editprofile_et_businessdescription_text"
+                        android:textColorHint="@color/hint_text_color"
+                        android:textColor="@color/grey_button_text_color"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_tv_businessdescription"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/business_myaccount_editprofile_tv_businesslookingfor"
+                        android:gravity="center"
+                        android:text="@string/business_myaccount_editprofile_tv_businesslookingfor_text"
+                        android:textStyle="bold"
+                        android:textColor="@color/grey_button_text_color"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_et_businessdescription"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:textSize="15sp"
+                        android:id="@+id/business_myaccount_editprofile_et_businesslookingfor"
+                        android:ems="10"
+                        android:lines="8"
+                        android:minLines="6"
+                        android:maxLines="10"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="false"
+                        android:background="@drawable/border"
+                        android:inputType="textMultiLine"
+                        android:hint="@string/business_myaccount_editprofile_et_businesslookingfor_text"
+                        android:textColorHint="@color/hint_text_color"
+                        android:textColor="@color/grey_button_text_color"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_tv_businesslookingfor"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/business_myaccount_editprofile_businessinfo_b_submit"
+                        android:gravity="center"
+                        android:text="@string/business_myaccount_editprofile_account_b_submit_text"
+                        android:background="@drawable/button_blue"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_et_businesslookingfor" />
+
+                </RelativeLayout>
+
+
+            </ScrollView>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/business_myaccount_editprofile_rl_productsservices"
+                android:layout_marginTop="122dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/background_grey">
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/business_home_account_sv_socialmediasettings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/business_myaccount_editprofile_rl_socialmediasettings"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_grey">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:weightSum="2"
+                        android:id="@+id/business_myaccount_editprofile_ll_socialmediasettings"
+                        android:layout_marginTop="177dp">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:id="@+id/business_myaccount_editprofile_socialmediasettings_ev_name"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:maxLines="10"
+                            android:singleLine="false"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:hint="@string/business_myaccount_editprofile_socialmediasettings_ev_name_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:textColor="@color/grey_button_text_color"
+                            android:layout_marginRight="2.5dp"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:id="@+id/business_myaccount_editprofile_socialmediasettings_ev_website"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:maxLines="10"
+                            android:singleLine="false"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:hint="@string/business_myaccount_editprofile_socialmediasettings_ev_website_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginLeft="2.5dp"/>
+
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:weightSum="2"
+                        android:id="@+id/business_myaccount_editprofile_ll_socialmediasettings2"
+                        android:layout_below="@+id/business_myaccount_editprofile_ll_socialmediasettings"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:id="@+id/business_myaccount_editprofile_socialmediasettings_ev_city"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:maxLines="10"
+                            android:singleLine="false"
+                            android:layout_marginRight="2.5dp"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:hint="@string/business_myaccount_editprofile_socialmediasettings_ev_city_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:textSize="15sp"
+                            android:id="@+id/business_myaccount_editprofile_socialmediasettings_ev_zipcode"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:maxLines="10"
+                            android:layout_marginLeft="2.5dp"
+                            android:singleLine="false"
+                            android:background="@drawable/border"
+                            android:inputType="textPersonName"
+                            android:hint="@string/business_myaccount_editprofile_socialmediasettings_ev_zipcode_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:weightSum="2"
+                        android:id="@+id/business_myaccount_editprofile_ll_socialmediasettings3"
+                        android:layout_below="@+id/business_myaccount_editprofile_ll_socialmediasettings2"
+                        android:layout_marginTop="5dp">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/business_myaccount_editprofile_socialmediasettings_b_browseimage"
+                            android:layout_marginRight="2.5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/business_myaccount_editprofile_b_browseimage_text"
+                            android:background="@drawable/button_blue"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/business_myaccount_editprofile_socialmediasettings_b_usecamera"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2.5dp"
+                            android:gravity="center"
+                            android:text="@string/business_myaccount_editprofile_b_usecamera_text"
+                            android:background="@drawable/button_blue"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:id="@+id/business_myaccount_editprofile_hcv_socialmediasettings4"
+                        android:layout_below="@+id/business_myaccount_editprofile_ll_socialmediasettings3"
+                        android:fillViewport="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fadeScrollbars="false"
+                        android:scrollbarStyle="outsideInset"
+                        android:layout_alignParentLeft="true"
+                        android:scrollbarTrackHorizontal="@drawable/scroll_track"
+                        android:scrollbarThumbHorizontal="@drawable/scroll_thumb">
+
+                        <LinearLayout
+                            android:id="@+id/business_myaccount_editprofile_socialmediasettings4_mygallery"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal"
+                            android:background="@drawable/background_grey"/>
+
+                    </HorizontalScrollView>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/business_myaccount_editprofile_socialmediasettings_b_submit"
+                        android:gravity="center"
+                        android:text="@string/business_myaccount_editprofile_account_b_submit_text"
+                        android:background="@drawable/button_blue"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/business_myaccount_editprofile_hcv_socialmediasettings4" />
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </FrameLayout>
+
+    <ToggleButton
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/business_myaccount_editprofile_tb_accountprofile"
+        android:text="@string/home_account_b_accountprofile_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#ffffff"
+        android:checked="false"
+        android:background="@drawable/home_account_dropdown_button"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/business_myaccount_editprofile_tb_contacts"
+        android:text="@string/home_account_b_pictures_text"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#ffffff"
+        android:checked="false"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/business_myaccount_editprofile_tb_accountprofile"
+        android:background="@drawable/home_account_dropdown_button"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/business_myaccount_editprofile_tb_businesssellerinfo"
+        android:text="@string/home_account_b_pictures_text"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#ffffff"
+        android:checked="false"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/business_myaccount_editprofile_tb_contacts"
+        android:background="@drawable/home_account_dropdown_button"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/business_myaccount_editprofile_tb_productservuces"
+        android:text="@string/home_account_b_pictures_text"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#ffffff"
+        android:checked="false"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/business_myaccount_editprofile_tb_businesssellerinfo"
+        android:background="@drawable/home_account_dropdown_button"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/business_myaccount_editprofile_tb_socialmediasetting"
+        android:text="@string/home_account_b_pictures_text"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#ffffff"
+        android:checked="false"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/business_myaccount_editprofile_tb_productservuces"
+        android:background="@drawable/home_account_dropdown_button"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
+

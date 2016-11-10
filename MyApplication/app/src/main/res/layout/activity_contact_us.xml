@@ -1,0 +1,152 @@
+<ScrollView
+    android:id="@+id/contactUs_sv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.dealacceleration.ForgotPasswordActivity"
+        android:background="#f4f4f4"
+        android:id="@+id/contactUs_rl"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/contactUs_tv_heading_text"
+            android:id="@+id/contactUs_tv_heading"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/grey_button_text_color"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contactUs_ll_one"
+            android:layout_below="@+id/contactUs_tv_heading"
+            android:layout_centerHorizontal="true"
+            android:background="#f4f4f4"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/contactUs_et_FirstName"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="2.5dp"
+                android:paddingLeft="5dp"
+                android:hint="@string/contactUs_et_firstname_text"
+                android:textColorHint="@color/hint_text_color"
+                android:background="#ffffff"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/contactUs_et_LastName"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:hint="@string/contactUs_et_LastName_text"
+                android:layout_marginLeft="2.5dp"
+                android:textColorHint="@color/hint_text_color"
+                android:background="#ffffff"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contactUs_ll_two"
+            android:layout_below="@+id/contactUs_ll_one"
+            android:layout_centerHorizontal="true"
+            android:background="#f4f4f4"
+            android:layout_marginTop="5dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/contactUs_et_email"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="2.5dp"
+                android:paddingLeft="5dp"
+                android:hint="@string/contactUs_et_email_text"
+                android:textColorHint="@color/hint_text_color"
+                android:background="#ffffff"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/contactUs_et_Phone"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:hint="@string/contactUs_et_phone_text"
+                android:layout_marginLeft="2.5dp"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/hint_text_color"
+                android:background="#ffffff"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:id="@+id/contactUs_tv_comments"
+            android:layout_below="@+id/contactUs_ll_two"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/contactUs_tv_comment_text"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/grey_button_text_color"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:id="@+id/contactUs_et_comments"
+            android:hint="@string/contactUs_et_comment_text"
+            android:textColorHint="@color/hint_text_color"
+            android:gravity="start"
+            android:background="#ffffff"
+            android:textSize="15sp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/contactUs_tv_comments"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contactUs_b_sumbit"
+            android:background="@drawable/button_blue"
+            android:text="@string/contactUs_b_text_text"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/contactUs_et_comments"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,97 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.dealacceleration.HomeProfileDetails"
+        android:background="@drawable/background_grey"
+        android:id="@+id/home_profiles_rl_profiledetails">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:id="@+id/home_profiles_iv_profilepic"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:id="@+id/home_profiles_ll_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:weightSum="2"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/home_profiles_iv_profilepic"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/home_profiles_b_share"
+                android:layout_width="0dp"
+                android:textAllCaps="false"
+                android:text="@string/home_profiles_b_share_text"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="2.5dp"
+                android:background="@drawable/button_blue"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/home_profiles_b_favourites"
+                android:layout_width="0dp"
+                android:textAllCaps="false"
+                android:text="@string/home_profiles_b_favourites_text"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="2.5dp"
+                android:background="@drawable/button_blue"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:textAllCaps="false"
+            android:text="@string/home_profiles_b_email_text"
+            android:id="@+id/home_profiles_b_email"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/button_blue"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/home_profiles_ll_buttons"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="@string/home_profiles_tv_businessinfo_text"
+            android:id="@+id/home_profiles_tv_businessinfo"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/grey_button_text_color"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_below="@+id/home_profiles_b_email"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/home_profiles_tv_businessinfodetails"
+            android:textColor="@color/grey_button_text_color"
+            android:textStyle="bold"
+            android:background="@null"
+            android:layout_below="@+id/home_profiles_tv_businessinfo"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

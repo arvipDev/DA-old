@@ -1,0 +1,436 @@
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_grey"
+        android:id="@+id/consumer_home_account_rl">
+
+        <ScrollView
+            android:id="@+id/consumer_home_account_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/background_grey"
+                    android:id="@+id/consumer_myaccount_editprofile_rl_picture"
+                    android:layout_below="@+id/consumer_myaccount_editprofile_tb_picture"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="85dp"
+                    android:layout_alignBottom="@+id/consumer_myaccount_editprofile_rl_accountprofile">
+
+                    <HorizontalScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="250dp"
+                        android:id="@+id/consumer_myaccount_editprofile_hsv_gallery"
+                        android:fillViewport="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fadeScrollbars="false"
+                        android:scrollbarStyle="outsideInset"
+                        android:scrollbarTrackHorizontal="@drawable/scroll_track"
+                        android:scrollbarThumbHorizontal="@drawable/scroll_thumb">
+
+                        <LinearLayout
+                            android:id="@+id/consumer_mygallery"
+                            android:layout_width="250dp"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal"
+                            android:background="@drawable/background_grey"/>
+
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:weightSum="2"
+                        android:id="@+id/consumer_myaccount_editprofile_ll_pictures"
+                        android:layout_below="@+id/consumer_myaccount_editprofile_hsv_gallery"
+                        android:layout_marginTop="40dp">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/consumer_myaccount_editprofile_b_browse"
+                            android:textAllCaps="false"
+                            android:text="@string/myaccount_editprofile_b_browse_text"
+                            android:background="@drawable/button_blue"
+                            android:layout_weight="1"
+                            android:textStyle="normal"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="2.5dp" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/consumer_myaccount_editprofile_b_capture"
+                            android:textAllCaps="false"
+                            android:text="@string/myaccount_editprofile_b_upload_text"
+                            android:background="@drawable/button_blue"
+                            android:layout_weight="1"
+                            android:textStyle="normal"
+                            android:textColor="#ffffff"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="2.5dp" />
+
+                        </LinearLayout>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:textAllCaps="false"
+                        android:text="@string/myaccount_editprofile_b_submit_text"
+                        android:background="@drawable/button_blue"
+                        android:id="@+id/consumer_myaccount_editprofile_b_submit"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_below="@+id/consumer_myaccount_editprofile_ll_pictures" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/consumer_myaccount_editprofile_rl_accountprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:gravity="left"
+                    android:layout_marginTop="45dp"
+                    android:weightSum="2"
+                    android:layout_alignParentBottom="true">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:weightSum="3"
+                        android:id="@+id/consumer_myaccount_editprofile_ll_accountprofile1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/consumer_myaccount_editprofile_tv_fullname"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2.5dp"
+                            android:text="@string/myaccount_editprofile_tv_fullname_text"
+                            android:gravity="center"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:textSize="15sp"
+                            android:id="@+id/consumer_myaccount_editprofile_ev_fullname"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="2.5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:hint="@string/myaccount_editprofile_ev_fullname_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:gravity="center"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:autoText="false"
+                            android:background="@drawable/border" />
+
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:weightSum="3"
+                        android:id="@+id/consumer_myaccount_editprofile_ll_accountprofile2"
+                        android:layout_below="@+id/consumer_myaccount_editprofile_ll_accountprofile1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:text="@string/myaccount_editprofile_tv_facebookurl_text"
+                            android:id="@+id/consumer_myaccount_editprofile_tv_facebookurl"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2.5dp"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:textSize="15sp"
+                            android:id="@+id/consumer_myaccount_editprofile_ev_facebookurl"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="2.5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:hint="@string/myaccount_editprofile_ev_facebookurl_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:gravity="center"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:background="@drawable/border" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:weightSum="3"
+                        android:id="@+id/consumer_myaccount_editprofile_ll_accountprofile3"
+                        android:layout_below="@+id/consumer_myaccount_editprofile_ll_accountprofile2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:text="@string/myaccount_editprofile_tv_twitterurl_text"
+                            android:id="@+id/consumer_myaccount_editprofile_tv_twitterurl"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2.5dp"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:textSize="15sp"
+                            android:id="@+id/consumer_myaccount_editprofile_ev_twitterurl"
+                            android:hint="@string/myaccount_editprofile_ev_twitterurl_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:layout_weight="2"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_marginLeft="2.5dp"
+                            android:gravity="center"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:background="@drawable/border" />
+
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:weightSum="3"
+                        android:id="@+id/consumer_myaccount_editprofile_ll_accountprofile4"
+                        android:layout_below="@+id/consumer_myaccount_editprofile_ll_accountprofile3"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:text="@string/myaccount_editprofile_tv_googleurl_text"
+                            android:id="@+id/consumer_myaccount_editprofile_tv_googleurl"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2.5dp"
+                            android:gravity="center"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:textSize="15sp"
+                            android:id="@+id/consumer_myaccount_editprofile_ev_googleurl"
+                            android:layout_weight="2"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_marginLeft="2.5dp"
+                            android:hint="@string/myaccount_editprofile_ev_googleurl_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:gravity="center"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:background="@drawable/border" />
+
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:weightSum="3"
+                        android:id="@+id/consumer_myaccount_editprofile_ll_accountprofile5"
+                        android:layout_below="@+id/consumer_myaccount_editprofile_ll_accountprofile4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:text="@string/myaccount_editprofile_tv_blogurl_text"
+                            android:id="@+id/consumer_myaccount_editprofile_tv_blogurl"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2.5dp"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:textSize="15sp"
+                            android:id="@+id/consumer_myaccount_editprofile_ev_blogurl"
+                            android:hint="@string/myaccount_editprofile_ev_blogurl_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="2.5dp"
+                            android:background="@drawable/border" />
+
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:weightSum="3"
+                        android:id="@+id/consumer_myaccount_editprofile_ll_accountprofile6"
+                        android:layout_below="@+id/consumer_myaccount_editprofile_ll_accountprofile5"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:text="@string/myaccount_editprofile_tv_website_text"
+                            android:id="@+id/consumer_myaccount_editprofile_tv_website"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2.5dp"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:textSize="15sp"
+                            android:id="@+id/consumer_myaccount_editprofile_ev_website"
+                            android:hint="@string/myaccount_editprofile_ev_website_text"
+                            android:textColorHint="@color/hint_text_color"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:gravity="center"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="2.5dp"
+                            android:textColor="@color/grey_button_text_color"
+                            android:textStyle="bold"
+                            android:background="@drawable/border" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:text="@string/myaccount_editprofile_tv_enter_text"
+                        android:id="@+id/consumer_myaccount_editprofile_tv_enter"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/grey_button_text_color"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/consumer_myaccount_editprofile_ll_accountprofile6"
+                        android:layout_centerHorizontal="true" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/consumer_myaccount_editprofile_ev_enter"
+                        android:textColorHint="@color/hint_text_color"
+                        android:gravity="start"
+                        android:hint="@string/myaccount_editprofile_ev_enter_text"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/grey_button_text_color"
+                        android:layout_below="@+id/consumer_myaccount_editprofile_tv_enter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/border" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:textAllCaps="false"
+                        android:text="@string/myaccount_editprofile_b_submit_text"
+                        android:background="@drawable/button_blue"
+                        android:id="@+id/consumer_myaccount_editprofile_b_submit"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_below="@+id/consumer_myaccount_editprofile_ev_enter"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <ToggleButton
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="@string/home_account_b_accountprofile_text"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#ffffff"
+            android:checked="false"
+            android:background="@drawable/home_account_dropdown_button"
+            android:id="@+id/consumer_myaccount_editprofile_tb_accountprofile"
+            android:textStyle="bold" />
+
+        <ToggleButton
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/consumer_myaccount_editprofile_tb_picture"
+            android:text="@string/home_account_b_pictures_text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#ffffff"
+            android:checked="false"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/consumer_myaccount_editprofile_tb_accountprofile"
+            android:background="@drawable/home_account_dropdown_button"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+

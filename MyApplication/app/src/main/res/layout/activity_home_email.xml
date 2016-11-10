@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollView_home_email"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="false"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_grey"
+        android:id="@+id/home_email_ll">
+
+        <LinearLayout
+            android:id="@+id/email_ll_segment"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:weightSum="2"
+            android:background="@drawable/background_grey"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp">
+
+            <services.SegmentedRadioGroupEmail
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:id="@+id/email_rb_segment_type"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:checkedButton="@+id/button_one">
+
+                <RadioButton
+                    android:id="@+id/email_rb_inbox"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:text="@string/email_rb_inbox_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="#01A9DB"
+                    android:background="#ffffff"
+                    android:checked="false" />
+                <RadioButton
+                    android:id="@+id/email_rb_sent"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:text="@string/email_rb_sent_text"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#01A9DB"
+                    android:background="#ffffff"
+                    android:checked="false" />
+                <RadioButton
+                    android:id="@+id/email_rb_trash"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:text="@string/email_rb_trash_text"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#01A9DB"
+                    android:background="#ffffff"
+                    android:checked="false" />
+
+            </services.SegmentedRadioGroupEmail>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/home_email_fl">
+
+            <ProgressBar
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:id="@+id/progressBar_email"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/progressbar"
+                android:layout_alignTop="@+id/home_email_fl_rl_lv_trash"
+                android:layout_centerHorizontal="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="left|top"
+                android:id="@+id/home_email_fl_rl_inbox"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/home_email_fl_rl_tv_inbox_text"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/grey_button_text_color"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/home_email_fl_rl_tv_inbox" />
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/home_email_fl_rl_lv_inbox"
+                    android:layout_below="@+id/home_email_fl_rl_tv_inbox"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:fadeScrollbars="true"
+                    android:scrollbarThumbVertical="@drawable/scroll_thumb"
+                    android:layout_centerHorizontal="true"
+                    android:contextClickable="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/home_email_fl_rl_sent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/home_email_fl_rl_tv_sent_text"
+                    android:id="@+id/home_email_fl_rl_tv_sent"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/grey_button_text_color"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/home_email_fl_rl_lv_sent"
+                    android:layout_below="@+id/home_email_fl_rl_tv_sent"
+                    android:background="@null"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/home_email_fl_rl_trash"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/home_email_fl_rl_tv_trash_text"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/grey_button_text_color"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/home_email_fl_rl_tv_trash" />
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/home_email_fl_rl_lv_trash"
+                    android:layout_below="@+id/home_email_fl_rl_tv_trash"
+                    android:background="@null" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/home_email_fl_ll_mailButtons"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/home_email_fl_b_delete"
+                android:layout_weight="1"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:layout_marginRight="2.5dp"
+                android:text="Delete"
+                android:background="@drawable/button_blue"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/home_email_fl_b_reply"
+                android:layout_weight="1"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:layout_marginLeft="2.5dp"
+                android:text="Reply"
+                android:background="@drawable/button_blue"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/home_email_fl_b_forward"
+                android:layout_weight="1"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:text="Forward"
+                android:background="@drawable/button_blue"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/home_email_fl_rl_details"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/home_email_rl_tv_subject_text"
+                android:textColor="@color/grey_button_text_color"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:gravity="left|center_horizontal"
+                android:paddingLeft="5dp"
+                android:background="#FFFFFF"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:id="@+id/home_email_rl_tv_name_text"
+                android:textColor="@color/grey_button_text_color"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp"
+                android:gravity="left|center_horizontal"
+                android:textAlignment="gravity"
+                android:paddingLeft="5dp"
+                android:background="#FFFFFF"
+                android:layout_below="@+id/home_email_rl_tv_subject_text"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:id="@+id/home_email_rl_tv_timestamp_text"
+                android:textColor="@color/grey_button_text_color"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp"
+                android:gravity="left|center_horizontal"
+                android:textAlignment="gravity"
+                android:paddingLeft="5dp"
+                android:background="#FFFFFF"
+                android:layout_below="@+id/home_email_rl_tv_name_text"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:id="@+id/home_email_rl_tv_body_text"
+                android:textColor="@color/grey_button_text_color"
+                android:textStyle="bold"
+                android:gravity="left|center_horizontal"
+                android:textAlignment="gravity"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="1dp"
+                android:maxLines="800"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="true"
+                android:scrollbarThumbVertical="@drawable/scroll_thumb"
+                android:background="#FFFFFF"
+                android:layout_below="@+id/home_email_rl_tv_timestamp_text"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>

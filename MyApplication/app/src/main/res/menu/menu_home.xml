@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.dealacceleration.HomeConsumerActivity">
+
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:showAsAction="never" />
+
+    <!--
+    <item
+        android:id="@+id/account"
+        android:visible="true"
+        android:icon="@drawable/account"
+        android:showAsAction="ifRoom"
+        android:title="Account"/>
+    <item
+        android:id="@+id/favourites"
+        android:icon="@drawable/favourites"
+        android:visible="true"
+        android:showAsAction="ifRoom"
+        android:title="Favourites"/>
+
+    <item
+        android:id="@+id/email"
+        android:icon="@drawable/email"
+        android:visible="true"
+        android:showAsAction="ifRoom"
+        android:title="Emain"/>
+
+    <item
+        android:id="@+id/services"
+        android:icon="@drawable/services"
+        android:showAsAction="ifRoom"
+        android:visible="true"
+        android:title="Services"/> -->
+
+</menu>

@@ -1,0 +1,147 @@
+<ScrollView
+    android:id="@+id/scrollView_composeEmail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_email_compose"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="@drawable/background_grey"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:id="@+id/rl_email_compose_ll_id"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:weightSum="2"
+            android:background="#ffffff"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:ems="10"
+                android:id="@+id/compose_et_email"
+                android:background="#FFFFFF"
+                android:textColor="#2c7da9" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_email_compose_ll_subject"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:weightSum="2"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/rl_email_compose_ll_id"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:layout_width="0dp"
+                android:inputType="textEmailSubject"
+                android:hint="Subject"
+                android:textColorHint="@color/hint_text_color"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:ems="10"
+                android:id="@+id/compose_et_subject"
+                android:background="#FFFFFF"
+                android:textColor="#2c7da9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_email_compose_ll_body"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:weightSum="2"
+            android:background="#ffffff"
+            android:layout_below="@+id/rl_email_compose_ll_subject"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:layout_width="0dp"
+                android:inputType="textMultiLine"
+                android:hint="Body"
+                android:textColorHint="@color/hint_text_color"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:maxLines="800"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="true"
+                android:scrollbarThumbVertical="@drawable/scroll_thumb"
+                android:ems="10"
+                android:id="@+id/compose_et_body"
+                android:background="#FFFFFF"
+                android:textColor="#2c7da9" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_email_compose_ll_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:weightSum="2"
+            android:background="@null"
+            android:layout_below="@+id/rl_email_compose_ll_body"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/compose_b_send"
+                android:layout_weight="1"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:layout_marginRight="2.5dp"
+                android:text="Send"
+                android:background="@drawable/button_blue"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/compose_b_cancel"
+                android:layout_weight="1"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:layout_marginLeft="2.5dp"
+                android:text="Cancel"
+                android:background="@drawable/button_blue"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

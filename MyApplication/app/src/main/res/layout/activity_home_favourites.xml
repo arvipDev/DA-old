@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_grey">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:id="@+id/favourites_heading"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Favorites"
+        android:textColor="@color/button_login"
+        android:gravity="center"/>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/favourites_listview"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"/>
+
+
+</LinearLayout>

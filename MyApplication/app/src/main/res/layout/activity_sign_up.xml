@@ -1,0 +1,277 @@
+<ScrollView
+    android:id="@+id/scrollView_signUp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.dealacceleration.SignUpActivity"
+        android:background="#f4f4f4"
+        android:outlineProvider="none"
+        android:textAlignment="center"
+        android:id="@+id/rl_signUp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:id="@+id/signUp_ll_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:weightSum="2"
+            android:layout_marginTop="74dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#f4f4f4">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:inputType="textPersonName"
+                android:hint="@string/signUp_et_firstName_text"
+                android:textColorHint="@color/hint_text_color"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:id="@+id/signUp_et_fname"
+                android:background="#FFFFFF"
+                android:textColor="#2c7da9" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:inputType="textPersonName"
+                android:hint="@string/signUp_et_lastName_text"
+                android:textColorHint="@color/hint_text_color"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:ems="10"
+                android:id="@+id/signUp_et_lname"
+                android:background="#FFFFFF"
+                android:textColor="#2c7da9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/signUp_ll_email"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:weightSum="2"
+            android:background="#f4f4f4"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/signUp_ll_name"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:layout_width="0dp"
+                android:inputType="textPersonName"
+                android:hint="@string/signUp_et_email_text"
+                android:textColorHint="@color/hint_text_color"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:ems="10"
+                android:id="@+id/signUp_et_email"
+                android:background="#FFFFFF"
+                android:textColor="#2c7da9" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/signUp_ll_question"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:weightSum="2"
+            android:background="#f4f4f4"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/signUp_ll_email"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:layout_width="0dp"
+                android:inputType="textPersonName"
+                android:hint="@string/signUp_et_securityQ_text"
+                android:textColorHint="@color/hint_text_color"
+                android:textSize="15sp"
+                android:layout_height="fill_parent"
+                android:paddingLeft="5dp"
+                android:layout_weight="1.4"
+                android:ems="10"
+                android:id="@+id/signUp_et_question"
+                android:background="#FFFFFF"
+                android:textColor="#2c7da9" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/signUp_tv_choose"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:background="#f4f4f4"
+                android:textColor="#246a8e"
+                android:id="@+id/signUp_tv_choose"
+                android:layout_weight="0.6"
+                android:onClick="onClick"
+                android:textSize="15sp"
+                android:clickable="true" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:hint="@string/signUp_et_answer"
+            android:textColorHint="@color/hint_text_color"
+            android:textSize="15sp"
+            android:id="@+id/signUp_et_answer"
+            android:background="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:textColor="#2c7da9"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/signUp_ll_question"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:hint="@string/signUp_et_password"
+            android:textColorHint="@color/hint_text_color"
+            android:textSize="15sp"
+            android:id="@+id/signUp_et_password"
+            android:background="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:textColor="#2c7da9"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/signUp_et_answer"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:hint="@string/signUp_tv_confirmPassword"
+            android:textColorHint="@color/hint_text_color"
+            android:textSize="15sp"
+            android:id="@+id/signUp_et_confirmPassword"
+            android:background="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:textColor="#2c7da9"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/signUp_et_password"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColorLink="@color/grey_button_text_color"
+            android:id="@+id/signup_tv_subtext"
+            android:layout_below="@+id/signUp_et_confirmPassword"
+            android:layout_marginTop="10dp"
+            android:maxLines="4"
+            android:singleLine="false"
+            android:layout_centerHorizontal="true"
+            android:background="#f4f4f4" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:textAllCaps="false"
+            android:text="@string/signUp_b_signUp"
+            android:background="@drawable/button_blue"
+            android:id="@+id/signUp_b_signUp"
+            android:textStyle="normal"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/signup_tv_subtext"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/signUp_ll_segment"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:weightSum="2"
+            android:background="#f4f4f4"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp">
+
+            <services.SegmentedRadioGroupSignUp
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:id="@+id/signUp_rb_segment_type"
+                android:checkedButton="@+id/button_one">
+                <RadioButton
+                    android:id="@+id/signUp_rb_customer"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:text="@string/signUp_rb_customer"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="#01A9DB"
+                    android:checked="false" />
+                <RadioButton
+                    android:id="@+id/signUp_rb_business"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:text="@string/signUp_rb_business"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#01A9DB" />
+            </services.SegmentedRadioGroupSignUp>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:inputType="textMultiLine"
+            android:id="@+id/signUp_tv_footer"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/signUp_b_signUp"
+            android:layout_centerHorizontal="true" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/signUp_pb_signUp"
+            android:indeterminateDrawable="@drawable/progressbar"
+            android:layout_alignTop="@+id/signUp_tv_footer"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</ScrollView>

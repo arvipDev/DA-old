@@ -1,0 +1,217 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="true"
+    android:scrollbarTrackVertical="@drawable/scroll_track"
+    android:scrollbarThumbVertical="@drawable/scroll_thumb"
+    android:id="@+id/parentScrollView"
+    android:fillViewport="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="fragments.HomeConsumerMyAccount"
+        android:background="@drawable/background_grey"
+        android:id="@+id/home_myaccount_rl"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/home_myaccount_iv_profilepic"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/profilepic"
+            android:contentDescription="@string/home_profilepic" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:hint="@string/home_myaccount_tv_name_hinttext"
+            android:textColor="@color/grey_button_text_color"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColorHint="@color/hint_text_color"
+            android:id="@+id/home_myaccount_tv_name"
+            android:layout_below="@+id/home_myaccount_iv_profilepic"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/home_myaccount_b_capture_image"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+            android:background="@drawable/camera"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/home_myaccount_b_gallery"
+            android:layout_alignRight="@+id/home_myaccount_tv_accounturl_filled"
+            android:layout_alignEnd="@+id/home_myaccount_tv_accounturl_filled" />
+
+        <Button
+            android:id="@+id/home_myaccount_b_gallery"
+            android:layout_width="50dp"
+            android:textAllCaps="false"
+            android:layout_height="40dp"
+            android:background="@drawable/gallery"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignRight="@+id/home_myaccount_tv_accounturl_filled"
+            android:layout_alignEnd="@+id/home_myaccount_tv_accounturl_filled" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="@string/home_myaccount_tv_descriptionone_text"
+            android:textColor="@color/grey_button_text_color"
+            android:gravity="bottom|center"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/home_myaccount_tv_descriptionone"
+            android:textSize="15dp"
+            android:layout_below="@+id/home_myaccount_tv_accounturl_filled"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/home_myaccount_tv_descriptionone"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/innerlayout">
+
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/childScrollView"
+                android:fadeScrollbars="true"
+                android:scrollbarTrackVertical="@drawable/scroll_track"
+                android:scrollbarThumbVertical="@drawable/scroll_thumb">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/SomeString"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/grey_button_text_color"
+                    android:id="@+id/home_myaccount_tv_lookingfor"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="@string/home_myaccount_tv_accounturl_text"
+            android:textStyle="bold"
+            android:textColor="@color/grey_button_text_color"
+            android:gravity="bottom|center"
+            android:textSize="15sp"
+            android:id="@+id/home_myaccount_tv_accounturl"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/home_myaccount_tv_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/home_myaccount_tv_accounturl_filled"
+            android:textColor="@color/button_login"
+            android:textSize="15sp"
+            android:gravity="top|center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/home_myaccount_tv_accounturl"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:id="@+id/home_myaccount_ll_buttonOne"
+            android:weightSum="2"
+            android:layout_below="@+id/innerlayout"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAllCaps="false"
+                android:text="@string/home_myaccount_b_share_text"
+                android:background="@drawable/button_blue"
+                android:id="@+id/home_myaccount_b_share"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAllCaps="false"
+                android:text="@string/home_myaccount_b_editprofile_text"
+                android:background="@drawable/button_blue"
+                android:id="@+id/home_myaccount_b_editprofile"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:id="@+id/home_myaccount_ll_buttonTwo"
+            android:layout_below="@+id/home_myaccount_ll_buttonOne"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:textAllCaps="false"
+                android:text="@string/home_myaccount_b_socialmedia_text"
+                android:background="@drawable/button_blue"
+                android:id="@+id/home_myaccount_b_socialmedia"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/progressbar"
+            android:id="@+id/consumer_myaccount_progressbar"
+            android:layout_above="@+id/home_myaccount_tv_accounturl_filled"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

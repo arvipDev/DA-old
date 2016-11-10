@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_blue"
+    android:weightSum="6">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/list_email_tv_from"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_weight="4"
+            android:layout_marginRight="2.5dp"
+            android:layout_gravity="left"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/list_email_tv_dateTime"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="right"
+            android:focusableInTouchMode="false"
+            android:textColor="#ffffff"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:layout_marginLeft="2.5dp"
+            android:layout_gravity="right"/>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/list_email_tv_subject"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="#ffffff"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="left"
+            android:layout_column="0" />
+    </TableRow>
+
+</TableLayout>

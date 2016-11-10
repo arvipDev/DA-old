@@ -1,0 +1,278 @@
+<resources>
+    <string name="app_name">Deal Acceleration</string>
+    <string name="action_settings">Settings</string>
+    <string name="iv_logo">iv_logo</string>
+    <string name="login_tv_loginText">Large Text</string>
+    <string name="title_activity_forgot_passowrd">Forgot Password</string>
+
+    <string name="login_et_login">"Username/Email"</string>
+    <string name="login_et_password">"Password"</string>
+    <string name="login_tv_login">Please Log In :</string>
+    <string name="login_tv_saveInfo">Save Login Info :</string>
+    <string name="login_b_login">Login</string>
+    <string name="login_b_forgotPassword">Forgot Password</string>
+    <string name="login_b_contactUs">Contact Us</string>
+    <string name="login_b_newUser">New User? Sign Up now, It\'s Free.</string>
+    <string name="forgotPassword_et_emailId">Email Address.</string>
+    <string name="forgotPassword_tv_message_text">Enter your emain address and Deal Acceleration will send you instructions how to reset your password.</string>
+    <string name="forgotPassword_et_email"></string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="forgotPassword_tv_message">Enter your email address and Deal Acceleration will send you instructions how to reset you password</string>
+    <string name="forgotPassword_b_cancel">Cancel</string>
+    <string name="forgotPassword_b_submit">Submit</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="signUp_et_lastName_text">" Last Name"</string>
+    <string name="signUp_et_firstName_text">" First Name"</string>
+    <string name="signUp_et_email_text">" Email"</string>
+    <string name="signUp_et_securityQ_text">" Security Question"</string>
+    <string name="signUp_tv_choose">Choose</string>
+    <string name="signUp_et_answer">" Security Answer"</string>
+    <string name="signUp_et_password">" Password"</string>
+    <string name="signUp_tv_confirmPassword">" Confirm Password"</string>
+    <string name="signUp_b_signUp">Sign Up</string>
+    <string name="signUp_rb_cosumer">Consumer</string>
+    <string name="signUp_rb_business">Business</string>
+    <string name="signUp_rb_customer">Consumer</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_home">Consumer</string>
+
+    <string name="Account">Account</string>
+    <string name="Email">Email</string>
+    <string name="Favourites">Favourites</string>
+    <string name="Services">Services</string>
+    <string name="home_rb_email">Email</string>
+    <string name="home_rb_services">Services</string>
+    <string name="home_tv_profiles">Profiles</string>
+    <string name="home_tv_mail">Email</string>
+    <string name="home_tv_favourite">Favourites</string>
+    <string name="home_tv_myaccount">My Account</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_account_dropdown_one">Account Profile</string>
+    <string name="home_account_b_accountprofile_text">Account Profile</string>
+    <string name="home_account_tv_accountprofile_text">Account Profile</string>
+    <string name="home_account_b_pictures_text">Edit Profile</string>
+    <string name="home_account_tv_pictures_text">Pictures</string>
+    <string name="home_account_b_financialinfo_text">Financial Info</string>
+    <string name="home_account_tv_financialinfo_text">Financial Info</string>
+    <string name="home_account_b_pictures_add_text">Browse</string>
+    <string name="home_account_b_pictures_remove_text">Add Image</string>
+    <string name="home_account_tv_accountprofile_name">Account Profile</string>
+    <string name="home_account_financialinfo_tv_carddetails_text">Card Details</string>
+    <string name="home_account_financialinfo_tv_firstname_text">First Name:</string>
+    <string name="home_account_financialinfo_tv_lastname_text">Last Name:</string>
+    <string name="home_account_financialinfo_tv_cardnumber">Card Number:</string>
+    <string name="home_account_financialinfo_tv_CVC_text">CVC:</string>
+    <string name="home_account_financialinfo_tv_expiration_text">Expiration(MM/YY):</string>
+    <string name="home_account_financialinfo_tv_subscriptiontype_text">Subscription Type:</string>
+    <string name="home_account_financialinfo_tv_amount_text">Amount($)</string>
+    <string name="home_account_financialinfo_tv_billingAddress_text">Billing Address</string>
+    <string name="home_account_tv_addressline1_text">Address Line 1:</string>
+    <string name="home_account_tv_addressline2_text">Address Line 2:</string>
+    <string name="home_account_tv_city_text">City</string>
+    <string name="home_account_tv_zipcode_text">Zipcode</string>
+    <string name="home_account_b_submitpayment_text">Submit Payment</string>
+    <string name="home_account_financialinfo_b_select_text">Select</string>
+    <string name="home_account_financialinfo_et_cardnumber_text">Card Number</string>
+    <string name="home_account_financialinfo_et_CVC_text">Security Code</string>
+    <string name="home_account_financialinfo_et_expiration_text">Expiration (MM/YY)</string>
+    <string name="home_account_financialinfo_et_subscriptiontype_text">Sunscription Type</string>
+    <string name="home_account_financialinfo_et_amount_text">Amount</string>
+    <string name="home_account_financialinfo_et_address1_text">Address Line 1</string>
+    <string name="home_account_financialinfo_et_address2_text">Address Line 2</string>
+    <string name="home_account_financialinfo_et_city">City</string>
+    <string name="home_account_financialinfo_et_state_text">State</string>
+    <string name="home_account_financialinfo_et_zipcode_text">Zipcode</string>
+    <string name="home_account_tv_state_text">State</string>
+    <string name="email_rb_inbox_text">Inbox</string>
+    <string name="email_rb_sent_text">Sent</string>
+    <string name="email_rb_trash_text">Trash</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="home_account_tv_name">Name :</string>
+    <string name="home_account_et_name">" Enter Full Name"</string>
+    <string name="home_account_tv_facebook">Facebook url :</string>
+    <string name="home_account_et_facebook">" Enter Facebook url"</string>
+    <string name="home_account_tv_twitter">Twitter url :</string>
+    <string name="home_account_et_twitter">" Enter Twitter url"</string>
+    <string name="home_account_et_google">" Enter Google+ url"</string>
+    <string name="home_account_et_blog">" Enter Blog url"</string>
+    <string name="home_account_et_website">" Enter Website"</string>
+    <string name="home_account_tv_google">Google+ url :</string>
+    <string name="home_account_tv_blog">Blog url :</string>
+    <string name="home_account_tv_website">Website :</string>
+    <string name="home_account_b_add_image">Add Image</string>
+    <string name="home_account_b_upload_image">Upload Image</string>
+    <string name="home_account_et_lookingFor">Specify what you are looking for and allow those offering this to search, find and contact you. Enter text here...</string>
+    <string name="home_account_tv_lookingFor">What I\'m looking for :</string>
+    <string name="title_activity_home_business">Business</string>
+    <string name="home_account_b_addpp_text">Choose Image</string>
+    <string name="home_account_tb_viewprofile_text">View Profile</string>
+    <string name="home_account_tb_activitywall_text">Activity Wall</string>
+    <string name="title_activity_home_my_account">HomeMyAccount</string>
+    <string name="myaccount_b_capture_image">Camera</string>
+    <string name="myaccount_b_gallery">Gallery</string>
+    <string name="home_myaccount_tv_name_text">Name</string>
+    <string name="home_myaccount_tv_name_hinttext">Name</string>
+    <string name="home_myaccount_tv_descriptionone_text">What I\'m looking for:</string>
+    <string name="home_myaccount_tv_accounturl_text">My Deal Acceleration public profile URL:</string>
+    <string name="home_myaccount_b_share_text">Share Profile</string>
+    <string name="home_myaccount_tv_favourited_text">Favourited:</string>
+    <string name="home_myaccount_b_editprofile_text">Edit Profile</string>
+    <string name="home_myaccount_b_socialmedia_text">Social Media</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="title_activity_socail_media">SocailMedia</string>
+    <string name="SomeString">Deal Acceleration android application - developed by Arvind Purushotham. Deal Acceleration android application - developed by Arvind Purushotham. Deal Acceleration android application - developed by Arvind Purushotham. Deal Acceleration android application - developed by Arvind Purushotham. Deal Acceleration android application - developed by Arvind Purushotham Deal Acceleration android application - developed by Arvind Purushotham.</string>
+    <string name="myaccount_editprofile_b_submit_text">Submit</string>
+    <string name="myaccount_editprofile_ev_enter_text">Specifies what you are looking for and allows those offering this to search, find, and contact you. Users can keyword search and find you based on the words you enter below. (750 characters max). - Toys, Books, Games, Chocolates, Shirts, Shoes</string>
+    <string name="myaccount_editprofile_tv_enter_text">What I\'m looking for:</string>
+    <string name="myaccount_editprofile_ev_website_text">Website</string>
+    <string name="myaccount_editprofile_tv_website_text">Website:</string>
+    <string name="myaccount_editprofile_ev_blogurl_text">Blog URL</string>
+    <string name="myaccount_editprofile_ev_googleurl_text">Google+ URL</string>
+    <string name="myaccount_editprofile_tv_blogurl_text">Blog URL:</string>
+    <string name="myaccount_editprofile_tv_googleurl_text">Google+ URL:</string>
+    <string name="myaccount_editprofile_ev_twitterurl_text">Twitter URL</string>
+    <string name="myaccount_editprofile_ev_facebookurl_text">Facebook URL</string>
+    <string name="myaccount_editprofile_tv_twitterurl_text">Twitter URL:</string>
+    <string name="myaccount_editprofile_tv_facebookurl_text">Facebook URL:</string>
+    <string name="myaccount_editprofile_ev_fullname_text">Full Name</string>
+    <string name="myaccount_editprofile_tv_fullname_text">Full Name:</string>
+    <string name="myaccount_editprofile_b_browse_text">Browse</string>
+    <string name="myaccount_editprofile_b_upload_text">Camera</string>
+    <string name="title_activity_social_media">Social Media</string>
+    <string name="home_email_fl_rl_tv_inbox_text">Inbox</string>
+    <string name="home_email_fl_rl_tv_sent_text">Sent</string>
+    <string name="home_email_fl_rl_tv_trash_text">Trash</string>
+    <string name="title_activity_home_profile_details">Profile Details</string>
+    <string name="list_profile_tv_description_text">Small Text</string>
+    <string name="home_profiles_b_favourites_text">Add to Favourites</string>
+    <string name="home_profiles_b_share_text">Share at:</string>
+    <string name="home_profiles_b_email_text">Send an E-mail</string>
+    <string name="home_profiles_tv_businessinfo_text">Business Information :</string>
+    <string name="home_myaccount_b_products_services_text">Products/Services</string>
+    <string name="title_activity_products_and_services">Products and Services</string>
+    <string name="products_services_tv_business_info_text">Business Information:</string>
+    <string name="products_services_list_b_share_text">Share</string>
+    <string name="products_services_list_b_favourites_text">Add to favourites</string>
+    <string name="business_myaccount_editprofile_et_companyname_text">Company Name</string>
+    <string name="business_myaccount_editprofile_et_website_text">Website</string>
+    <string name="business_myaccount_editprofile_et_address1_text">Address 1</string>
+    <string name="business_myaccount_editprofile_et_address2_text">Address 2</string>
+    <string name="business_myaccount_editprofile_et_city_text">City</string>
+    <string name="business_myaccount_editprofile_et_state_text">State</string>
+    <string name="business_myaccount_editprofile_et_zipcode_text">Zip code</string>
+    <string name="business_myaccount_editprofile_et_country_text">Country</string>
+    <string name="business_myaccount_editprofile_b_browseimage_text">Browse</string>
+    <string name="business_myaccount_editprofile_b_usecamera_text">Camera</string>
+    <string name="business_myaccount_editprofile_tv_addimage_text">Add logo:</string>
+    <string name="business_myaccount_editprofile_tv_entercontactinfo_text">Enter contact information:</string>
+    <string name="business_myaccount_editprofile_tv_primarycontact_text">Primary Contact</string>
+    <string name="business_myaccount_editprofile_et_name_text">Name</string>
+    <string name="business_myaccount_editprofile_et_email_text">Email</string>
+    <string name="business_myaccount_editprofile_et_phone_text">Phone Number</string>
+    <string name="business_myaccount_editprofile_tv_secondarycontact_text">Secondary Contact</string>
+    <string name="business_myaccount_editprofile_account_b_submit_text">Submit</string>
+    <string name="business_myaccount_editprofile_tv_additionalcontact_text">Additional Contact</string>
+    <string name="business_myaccount_editprofile_tv_businessdescription_text">Enter your business description:</string>
+    <string name="business_myaccount_editprofile_et_businessdescription_text">Describe your business</string>
+    <string name="business_myaccount_editprofile_tv_businesslookingfor_text">Describe what your business/seller is looking for:</string>
+    <string name="business_myaccount_editprofile_et_businesslookingfor_text">Describe what you are looking for</string>
+    <string name="business_myaccount_editprofile_socialmediasettings_tv_name_text">Name</string>
+    <string name="business_myaccount_editprofile_socialmediasettings_ev_name_text">Name</string>
+    <string name="business_myaccount_editprofile_socialmediasettings_ev_website_text">Website</string>
+    <string name="business_myaccount_editprofile_socialmediasettings_ev_city_text">City</string>
+    <string name="business_myaccount_editprofile_socialmediasettings_ev_zipcode_text">Zip Code</string>
+    <string name="title_activity_business_my_account_edit_profile">Edit Profile
+    </string>
+    <string name="title_activity_consumer_my_account_edit_profile">Edit Profile
+    </string>
+    <string name="title_activity_business_my_activity_edit_profile">Edit Profile
+    </string>
+    <string name="title_activity_business">Business</string>
+    <string name="myaccount_socialmedia_tv_today_text">What\'s new today?</string>
+    <string name="myaccount_socialmedia_b_post_text">Post</string>
+    <string name="myaccount_socialmedia_tv_wall_text">Activity Wall</string>
+    <string name="title_activity_intermediate">Profile loading, please wait...</string>
+    <string name="title_activity_contact_us">Contact Us</string>
+    <string name="contactUs_tv_heading_text">Have a question or comment?</string>
+    <string name="contactUs_et_firstname_text">First Name:</string>
+    <string name="contactUs_et_LastName_text">Last Name:</string>
+    <string name="contactUs_et_email_text">Email:</string>
+    <string name="contactUs_et_phone_text">Phone:</string>
+    <string name="contactUs_tv_comment_text">Please enter your questions, comments or suggestions below:</string>
+    <string name="contactUs_et_comment_text">Please allow 1-2 business days for a reply.</string>
+    <string name="contactUs_b_text_text">Submit</string>
+    <string name="business_home_profilepic">profilepic</string>
+    <string name="home_profilepic">profilepic</string>
+    <string name="image">profileimage</string>
+    <string name="title_activity_reply_email">Compose Email</string>
+    <string name="title_activity_favourite_profile">FavouriteProfile</string>
+    <string name="title_activity_compose_email">ComposeEmail</string>
+
+    <string-array name="profile_search_categories">
+        <item>Astrology </item>
+        <item>Auction Services </item>
+        <item>Automotive, Cars, Trucks, Motorcycles, Accessories </item>
+        <item>Baby Products, Services</item>
+        <item>Betting, Gaming, Lotto </item>
+        <item>Books, eBooks, Magazines, Media </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+
+
+    </string-array>
+
+    signUp_et_securityQ_text
+
+</resources>

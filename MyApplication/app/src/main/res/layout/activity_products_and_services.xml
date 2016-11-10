@@ -1,0 +1,90 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/products_services_sv"
+    android:fadeScrollbars="false"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbarTrackVertical="@drawable/scroll_track"
+    android:scrollbarThumbVertical="@drawable/scroll_thumb">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.dealacceleration.ProductsAndServices"
+        android:background="@drawable/background_grey"
+        android:id="@+id/products_services_rl">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="350dp"
+            android:id="@+id/products_services_lv_products"
+            android:fadeScrollbars="false"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarTrackVertical="@drawable/scroll_track"
+            android:scrollbarThumbVertical="@drawable/scroll_thumb"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:id="@+id/products_services_b_share"
+            android:clickable="true"
+            android:text="@string/products_services_list_b_share_text"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_blue"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/products_services_lv_products"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="@string/products_services_tv_business_info_text"
+            android:textColor="@color/button_login"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/products_services_tv_business_info"
+            android:layout_below="@+id/products_services_b_share"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:id="@+id/products_services_tv_business_info_text"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:textColor="@color/button_login"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:maxLines="15"
+            android:singleLine="false"
+            android:layout_below="@+id/products_services_tv_business_info"
+            android:layout_centerHorizontal="true" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prod_ser_progressbar"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/progressbar"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="98dp" />
+    </RelativeLayout>
+
+
+
+</ScrollView>

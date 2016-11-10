@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="button_login">#277198</color>>
+    <color name="hint_text_color">#c6c6c6</color>>
+    <color name="grey_button_text_color">#246a8e</color>>
+    <color name="home_account_unselected">#f4f4f4</color>
+    <color name="example">#2b86b1</color>
+
+</resources>
